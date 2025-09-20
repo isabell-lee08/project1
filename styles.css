@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box;
+}
+
+#console {
+    background: url(images/console.png) bottom/100% no-repeat;
+    width: 100vw;
+    height: 70vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
+}
+
+body {
+    background: url(images/starBG.png) center/50% fixed;
+    color: white;
+    margin: 0;
+    padding-top: 3em;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#chorg {
+    background: url(images/alienproto.png) center/100% no-repeat;
+    width: 10em;
+    height: 10em;
+    opacity: 0;
+}
+
+#main_container {
+    width: 80vw;
+    height: 60vh;
+    border: white 3px solid;
+
+    overflow: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+#main_container::-webkit-scrollbar {
+    display: none;
+}
+
+#main_container>* {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 10em;
+}
+
+#intro {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chorgintro {
+    height: 1000%;
+    background: blue;
+    padding: 10rem;
+}
