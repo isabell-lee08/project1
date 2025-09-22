@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger);
 
     ScrollTrigger.defaults({
-        scrub: true,
+        scrub: 3,
     });
 
     gsap.to('#intro', {

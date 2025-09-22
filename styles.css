@@ -34,7 +34,7 @@ body {
     width: 10em;
     height: 15em;
     position: fixed;
-    bottom: 10em;
+    bottom: 7em;
     z-index: 1;
     opacity: 1;
     pointer-events: none;
@@ -94,7 +94,11 @@ p {
     margin: 2em;
 }
 
-#spacer {
+#spacer1 {
+    height: 10vh;
+}
+
+#spacer2 {
     height: 20vh;
 }
 
@@ -215,4 +219,22 @@ a:hover {
     text-align: center;
     flex: 0 0 100%;
 
+}
+
+/* MOBILE */
+@media screen and (max-width: 700px) {
+    #chorg {
+        background: url(images/chorg.png) bottom/100% no-repeat;
+        width: 8em;
+        height: 15em;
+        position: fixed;
+        bottom: 3em;
+        z-index: 1;
+        opacity: 1;
+        pointer-events: none;
+    }
+
+    #spacer2 {
+        height: 30vh;
+    }
 }
