@@ -3,7 +3,6 @@ html {
 }
 
 #console {
-    background: url(images/starBG.png) center/50% fixed;
     width: 100vw;
     height: 10vh;
     position: fixed;
@@ -237,12 +236,20 @@ a:hover {
     }
 
     #chorgClick {
-    width: 6em;
-    height: 4em;
-    position: fixed;
-    bottom: 4em;
-    z-index: 2;
-    opacity: 1;
+        width: 6em;
+        height: 4em;
+        position: fixed;
+        bottom: 4em;
+        z-index: 2;
+        opacity: 1;
+    }
 }
+
+@media screen and (max-width: 500px) {
+
+    #mobspace {
+        background: red;
+        height: 80vh;
+    }
 
 }
