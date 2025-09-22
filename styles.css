@@ -21,9 +21,12 @@ body {
     background: url(images/starBG.png) center/50% fixed;
     color: white;
     margin: 0;
+}
+
+#mainpage {
+    overflow: hidden;
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 
 #chorg {
@@ -59,7 +62,7 @@ body {
     display: none;
 }
 
-img {
+#mainpage img {
     max-width: 10em;
 }
 
@@ -171,4 +174,37 @@ p {
         top: 5px;
         rotate: 8deg;
     }
+}
+
+/* SUBPAGES */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(35, 130, 255);
+    letter-spacing: 0.1em;
+}
+
+.route {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: 100vh;
+}
+
+.drawing {
+    max-width: 70%;
+    max-height: 70%;
+    border: white 3px solid;
+    overflow: hidden;
+}
+
+.text {
+    text-align: center;
+    flex: 0 0 100%;
+
 }
