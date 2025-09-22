@@ -74,14 +74,19 @@ p {
 }
 
 #intro {
-    height: 65%;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
     text-align: center;
+}
+
+#mainpage h1 {
+    flex: 0 0 100%;
+    font-size: 3em;
 }
 
 #chorgintro {
@@ -102,14 +107,17 @@ p {
 }
 
 .planet {
+    background: rgba(255, 255, 255, 0);
     margin: 3em;
     position: relative;
     transition: .5s ease-in-out;
     border-radius: 10em;
+    display: block;
 }
 
 .planet:hover {
     scale: 1.2;
+    box-shadow: white 0px 0px 15px;
 }
 
 #one,

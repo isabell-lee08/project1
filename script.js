@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         repeat: -1,
         ease: 'in',
     })
-    tl.to('h1', {y: 10,});
-    tl.to('h1', {y: 0,});
+    tl.to('#intro', {y: 10,});
+    tl.to('#intro', {y: 0,});
 
     gsap.registerPlugin(ScrollTrigger);
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scrollTrigger: {
             trigger: "h1",
             scroller: "#main_container",
-            start: "40% 30%",
+            start: "40% 20%",
             end: "60% top",
         },
         opacity: 0,
