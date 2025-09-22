@@ -245,10 +245,9 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 510px) {
 
     #mobspace {
-        background: red;
         height: 80vh;
     }
 
