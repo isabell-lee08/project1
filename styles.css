@@ -3,11 +3,13 @@ html {
 }
 
 #console {
+    background: url(images/starBG.png) center/50% fixed;
     width: 100vw;
     height: 10vh;
     position: fixed;
     bottom: 0;
     z-index: 1;
+    user-select: none;
 }
 
 #console img {
@@ -34,17 +36,17 @@ body {
     width: 10em;
     height: 15em;
     position: fixed;
-    bottom: 7em;
+    bottom: 9em;
     z-index: 1;
     opacity: 1;
     pointer-events: none;
 }
 
 #chorgClick {
-    width: 7em;
+    width: 6em;
     height: 4em;
     position: fixed;
-    bottom: 11.5em;
+    bottom: 10.5em;
     z-index: 2;
     opacity: 1;
 }
@@ -89,16 +91,16 @@ p {
     font-size: 3em;
 }
 
+h2 {
+    padding: 0em 2em;
+}
+
 #chorgintro {
     text-align: center;
     margin: 2em;
 }
 
-#spacer1 {
-    height: 10vh;
-}
-
-#spacer2 {
+.spacer {
     height: 20vh;
 }
 
@@ -225,7 +227,7 @@ a:hover {
 @media screen and (max-width: 700px) {
     #chorg {
         background: url(images/chorg.png) bottom/100% no-repeat;
-        width: 8em;
+        width: 9em;
         height: 15em;
         position: fixed;
         bottom: 3em;
@@ -234,7 +236,13 @@ a:hover {
         pointer-events: none;
     }
 
-    #spacer2 {
-        height: 30vh;
-    }
+    #chorgClick {
+    width: 6em;
+    height: 4em;
+    position: fixed;
+    bottom: 4em;
+    z-index: 2;
+    opacity: 1;
+}
+
 }

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger);
 
     ScrollTrigger.defaults({
-        scrub: 3,
+        scrub: true,
     });
 
     gsap.to('#intro', {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scrollTrigger: {
             trigger: '#directions1',
             scroller: "#main_container",
-            start: "top 30%",
+            start: "top 20%",
             end: "+=3500 bottom",
             pin: true,
         },
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scrollTrigger: {
             trigger: '#directions2',
             scroller: "#main_container",
-            start: "top 30%",
+            start: "top 20%",
             end: "+=3500 top",
             pin: true,
         },
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scrollTrigger: {
             trigger: '#directions3',
             scroller: "#main_container",
-            start: "top 30%",
+            start: "top 20%",
             end: "+=1000 top",
             pin: true,
         },
@@ -67,16 +67,16 @@ const planetTwo = document.getElementById('two');
 const planetThree = document.getElementById('three');
 const planetFour = document.getElementById('four');
 
-planetOne.addEventListener('mouseover', function () {
+planetOne.addEventListener('pointerover', function () {
     chorg.style.backgroundImage = "url(images/chorg_verysad.png)"
 })
-planetTwo.addEventListener('mouseover', function () {
+planetTwo.addEventListener('pointerover', function () {
     chorg.style.backgroundImage = "url(images/chorg_sad.png)"
 })
-planetThree.addEventListener('mouseover', function () {
+planetThree.addEventListener('pointerover', function () {
     chorg.style.backgroundImage = "url(images/chorg_ok.png)"
 })
-planetFour.addEventListener('mouseover', function () {
+planetFour.addEventListener('pointerover', function () {
     chorg.style.backgroundImage = "url(images/chorg_happy.png)"
 })
 
@@ -84,9 +84,9 @@ function chorgDefault() {
     chorg.style.backgroundImage = "url(images/chorg.png)"
 }
 
-chorgClick.addEventListener('mousedown', function () {
+chorgClick.addEventListener('pointerdown', function () {
     chorg.style.backgroundImage = "url(images/chorg_bop.png)"
     const squish = new Audio("audio/squish.m4a");
     squish.play()
 })
-chorgClick.addEventListener('mouseup', chorgDefault)
+chorgClick.addEventListener('pointerup', chorgDefault)
