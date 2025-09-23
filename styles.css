@@ -245,6 +245,29 @@ a:hover {
     }
 }
 
+@media screen and (max-height: 500px) {
+
+    #chorg {
+        background: url(images/chorg.png) bottom/100% no-repeat;
+        width: 9em;
+        height: 15em;
+        position: fixed;
+        bottom: 3em;
+        z-index: 1;
+        opacity: 1;
+        pointer-events: none;
+    }
+
+    #chorgClick {
+        width: 6em;
+        height: 4em;
+        position: fixed;
+        bottom: 4em;
+        z-index: 2;
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 510px) {
 
     #mobspace {
